@@ -1,0 +1,90 @@
+
+h1, h2, h3{
+    font-size: 30px;
+    display: inline;
+}
+.bg-img{
+    background-image: url(img/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    /* position:relative; */
+    min-height: 600px;
+   
+}
+
+header{
+    background-color:rgb(76, 165, 195,0.7);
+    font-size: medium;
+}
+
+
+
+.container-background{
+    position:absolute;
+    /* margin: 20px; */
+    width: 100%;
+    
+}
+
+.logo{
+    margin-left: 1rem
+}
+
+.logo .capital{
+    color: orange;
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+  .topnav a {
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .banner{
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    margin-top:450px; 
+    text-align: center;
+    padding:1em;
+  }
+
+  .banner-text{
+    text-align: center;
+    
+    margin: 1em 1em 1em 1em; 
+    display: inline;
+    color: #f2f2f2;
+  }
+
+  .container-search-bar{
+    border-radius: 3rem;
+    background-color: rgb(228, 228, 228);
+    width: 60%;
+    height: 70px;
+    position: absolute;
+    margin: -20px 270px;
+  }
+
+  .icons{
+    text-align: right;
+    margin: auto 1rem 1rem auto;
+  }
