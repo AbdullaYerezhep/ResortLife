@@ -13,74 +13,124 @@
 
 <body>
     <!-- <img src="/img/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg" alt="beach"> -->
-    <div class="bg-img">
-        <div class="container-background">
-            
-            <div class="top-nav">
-                <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4 border-bottom">
-                  <a href="/" class="logo d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <span class="capital">T</span>ravel
-                  </a>
+    <header>
+        <a href="" class="logo">
+          Resort-Life.<span>kz</span>
+        </a>
               
-                  <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link pb-4 pe-10 link-light">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">Tours</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">Blog</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">FAQs</a></li>
-                    <li><a href="#" class="nav-link px-2 link-light">About</a></li>
-                  </ul>
+        <div class="menu">
+          <div class="menu-items">
+              <a href="#" >home</a>
+              <a href="#" >tours</a>
+              <a href="#" >blog</a>
+              <a href="#" >FAQS</a>
+              <a href="#" >about</a>
+          </div>
+        </div>  
+    
               
-                  <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-light">Sign-up</button>
-                  </div>
-                </header>
-                
-            </div>
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-light me-2">Book Now</button>
+          
+        </div>
+    </header>
+        <section class="home">
+            <video src="video/Family.mp4" autoplay muted loop></video>
+            <video src="video/Fish.mp4"   autoplay muted loop></video>
+            <video src="video/Hand.mp4"   autoplay muted loop></video>
+            <video src="video/Ocean.mp4"  autoplay muted loop></video>
+            <video src="video/Sea.mp4"    autoplay muted loop></video>
             <div class="icons">
                 <i class="fas fa-search" id="search-button"></i>
                 <i class="fas fa-user" id="login-button"></i>
-              </div>
-            
-        </div>
-
-        <div class="banner">
-            <div class="banner-text">
-                <h2 class="display-2">Navigate  </h2>
-                <h1 class="display-2">your  </h1>
-                <h3 class="display-2">destiny</h3>
             </div>
-        </div>
-    </div>
-    <form class="container-search-bar" method="get">
-        <label class="input-group">
-            <input type="text" placeholder="Search hotel">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <label class="input-group-label"></label>
-        </label>
-        <div class="input-group-combo">
-            <label ></label>
-            <label for="start">Start date:</label>
-            <input type="date" id="start" name="trip-start" >
-            <label for="end">End date:</label>
-            <input type="date" id="end" name="trip-end">
-        </div>
-        
-        <label for="guests">Guests:</label>
-        <input type="number">
-        <button class="btn btn-dark">Search</button>
-    </form>
 
-    <div class="tours">
-        <div class="tour-1">
+            <div class="banner-text" id="banner-text">
+                <h1 id="banner-h1">Navigate<br> your<br> destiny</h1>
+            </div>
+            
+            
+            <form method="get" class="rl-form" action="/hotels">
+                <label class="rl-input-group">
+                    <input type="text" value="" name="query" class="rl-input-group_input no-validation-style" placeholder="Search hotel" aria-required="true">
+                    <i class="rl-input-group_icon fa-solid fa-magnifying-glass"></i>
+                    <label class="rl-input-group_label">Search</label>
+                </label>
+        
+                <div class="rl-input-group_combo">
+                    <label class="rl-input-group">
+                        <input id="home-start-date" type="text" name="checkin" autocomplete="off" placeholder="Select a date" class="rl-input-group_input no-validation-style" aria-required="true">
+                        <i class="rl-input-group_icon ph-calendar-blank-bold"></i>
+                        <label class="rl-input-group_label">Check in</label>
+                    </label>
+        
+                    <label class="rl-input-group">
+                        <input id="home-end-date" type="text" name="checkout" autocomplete="off" placeholder="Select a date" class="rl-input-group_input no-validation-style" aria-required="true">
+                        <i class="rl-input-group_icon ph-calendar-blank-bold"></i>
+                        <label class="rl-input-group_label">Check out</label>
+                    </label>
+                    <span id="home-calendar-holder" class="rl-input-group_calendar-wrapper"><div class="litepicker" data-plugins="" style="display: none; position: absolute; z-index: 9999; top: 313.927px; left: 454.406px;"><div class="container__main"><div class="container__months"><div class="month-item"><div class="month-item-header"><button type="button" class="button-previous-month"><svg width="11" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M7.919 0l2.748 2.667L5.333 8l5.334 5.333L7.919 16 0 8z" fill-rule="nonzero"></path></svg></button><div><strong class="month-item-name">June</strong><span class="month-item-year">2023</span></div><button type="button" class="button-next-month"><svg width="11" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M2.748 16L0 13.333 5.333 8 0 2.667 2.748 0l7.919 8z" fill-rule="nonzero"></path></svg></button></div><div class="month-item-weekdays-row"><div title="Monday">Mon</div><div title="Tuesday">Tue</div><div title="Wednesday">Wed</div><div title="Thursday">Thu</div><div title="Friday">Fri</div><div title="Saturday">Sat</div><div title="Sunday">Sun</div></div><div class="container__days"><div></div><div></div><div></div><div class="day-item" data-time="1685556000000" tabindex="0">1</div><div class="day-item" data-time="1685642400000" tabindex="0">2</div><div class="day-item" data-time="1685728800000" tabindex="0">3</div><div class="day-item" data-time="1685815200000" tabindex="0">4</div><div class="day-item" data-time="1685901600000" tabindex="0">5</div><div class="day-item" data-time="1685988000000" tabindex="0">6</div><div class="day-item" data-time="1686074400000" tabindex="0">7</div><div class="day-item" data-time="1686160800000" tabindex="0">8</div><div class="day-item" data-time="1686247200000" tabindex="0">9</div><div class="day-item" data-time="1686333600000" tabindex="0">10</div><div class="day-item" data-time="1686420000000" tabindex="0">11</div><div class="day-item" data-time="1686506400000" tabindex="0">12</div><div class="day-item" data-time="1686592800000" tabindex="0">13</div><div class="day-item" data-time="1686679200000" tabindex="0">14</div><div class="day-item" data-time="1686765600000" tabindex="0">15</div><div class="day-item" data-time="1686852000000" tabindex="0">16</div><div class="day-item" data-time="1686938400000" tabindex="0">17</div><div class="day-item" data-time="1687024800000" tabindex="0">18</div><div class="day-item" data-time="1687111200000" tabindex="0">19</div><div class="day-item" data-time="1687197600000" tabindex="0">20</div><div class="day-item" data-time="1687284000000" tabindex="0">21</div><div class="day-item" data-time="1687370400000" tabindex="0">22</div><div class="day-item" data-time="1687456800000" tabindex="0">23</div><div class="day-item" data-time="1687543200000" tabindex="0">24</div><div class="day-item" data-time="1687629600000" tabindex="0">25</div><div class="day-item" data-time="1687716000000" tabindex="0">26</div><div class="day-item" data-time="1687802400000" tabindex="0">27</div><div class="day-item" data-time="1687888800000" tabindex="0">28</div><div class="day-item" data-time="1687975200000" tabindex="0">29</div><div class="day-item" data-time="1688061600000" tabindex="0">30</div></div></div></div></div><div class="container__tooltip"></div></div></span>
+                </div>
+    
+                <label id="home-guests" class="rl-input-group dropdown">
+                    <input type="text" class="rl-input-group_input no-validation-style" placeholder="Add guests" aria-required="true" role="button" id="home-guests-input" data-bs-toggle="dropdown" aria-expanded="false" readonly="">
+                    <i class="rl-input-group_icon ph-user-circle-plus-bold"></i>
+                    <label class="rl-input-group_label">Guests</label>
+                    <span id="home-guests-holder" class="rl-input-group_guest-input-wrapper dropdown-menu">
+                        <input type="text" name="adults" id="home-guests-adults" hidden="">
+                        <input type="text" name="children" id="home-guests-children" hidden="">
+                        <span class="rl-input-group rl-input-group__number">
+                            <input type="number" placeholder="0" min="0" class="rl-input-group_input no-validation-style" data-label="Adults" aria-required="true"><div class="rl-input-group__number_button_wrapper"><span class="rl-input-group__number_button up"></span><span class="rl-input-group__number_button down"></span></div>
+                            <i class="rl-input-group_icon ph-user-circle-bold"></i>
+                            <label class="rl-input-group_label">Adults</label>
+                        </span>
+
+                        <span class="rl-input-group rl-input-group__number">
+                            <input type="number" placeholder="0" min="0" class="rl-input-group_input no-validation-style" data-label="Children" aria-required="true"><div class="rl-input-group__number_button_wrapper"><span class="rl-input-group__number_button up"></span><span class="rl-input-group__number_button down"></span></div>
+                            <i class="rl-input-group_icon ph-baby-bold"></i>
+                            <label class="rl-input-group_label">Children</label>
+                        </span>
+                    </span>
+                </label>
+                <button type="submit" class="rl-btn rl-btn__primary rl-btn__rounded btn btn-light">
+                    <i class="ph-magnifying-glass-bold"></i>
+                    Search
+                </button>
+            </form>
+
+            <!-- <form class="container-search-bar" method="get">
+                <label class="input-group">
+                    <input type="text" placeholder="Search hotel">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <label class="input-group-label"></label>
+                </label>
+                <div class="input-group-combo">
+                    <label ></label>
+                    <label for="start">Start date:</label>
+                    <input type="date" id="start" name="trip-start" >
+                    <label for="end">End date:</label>
+                    <input type="date" id="end" name="trip-end">
+                </div>
+                
+                <label for="guests">Guests:</label>
+                <input type="number">
+                <button class="btn btn-dark">Search</button>
+            </form> -->
+        </section>
+            
+            
+        
+
+    <div class="rl-tours">
+        <div class="rl-tour">
             <h3>Maldives</h3>
             <img src="" alt="beach">
         </div>
-        <div class="tour-2">
+        <div class="rl-tour">
             <h3>Thailand</h3>
             <img src="" alt="beach">
         </div>
-        <div class="tour-3">
+        <div class="rl-tour">
             <h3>Turkey</h3>
             <img src="" alt="beach">
         </div>
