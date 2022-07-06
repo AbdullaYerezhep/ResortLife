@@ -159,6 +159,57 @@ section{
   line-height: 2rem;
 }
 
+.media-icon i:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.media-icon i:hover{
+  transform: scale(1.3);
+  transition: 0.3s ease;
+}
+
+.slider{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  z-index: 999;
+}
+
+.slider .nav-btn{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor:pointer;
+  box-shadow: rgba(255, 255, 255, 0.5);
+}
+
+.slider .nav-btn:not(:last-child){
+  margin-right: 1rem;
+}
+
+.slider .nav-btn:active{
+  background-color: #0f8c44;
+}
+
+.slider .nav-btn:hover{
+  transform:scale(1.2)
+}
+
+.video-slide{
+  position:absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%)
+}
+
+.video-slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
   .rl-form{
     z-index:888;
     position: absolute;
