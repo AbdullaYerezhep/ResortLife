@@ -1,0 +1,27 @@
+{
+  "name": "resortlife",
+  "version": "1.0.0",
+  "description": "Travel Agency web-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdullaYerezhep/ResortLife.git"
+  },
+  "author": "Abdulla Yerezhep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdullaYerezhep/ResortLife/issues"
+  },
+  "homepage": "https://github.com/AbdullaYerezhep/ResortLife#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "jquery": "^3.6.0",
+    "node": "^18.4.0",
+    "nodemon": "^2.0.18"
+  }
+}
