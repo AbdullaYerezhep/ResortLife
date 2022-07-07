@@ -1,6 +1,5 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const slider = require(__dirname +'/slider.js')
 
 const app = express()
 
@@ -14,11 +13,12 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/tours', (req, res)=>{
-    res.render('/tours',{})
+    res.render('tours',{})
 })
 
-app.get('about', (req,res)=>{
-    res.render('/about',{})
+app.get('/about', (req,res)=>{
+    res.render('about',{})
 })
+
 
 app.listen('4000', (req, res)=>console.log('Server is running on port 4000'))
